@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,25 +24,47 @@ public class MainActivity extends AppCompatActivity {
     private FragmentManager fragmentManager = getSupportFragmentManager();
     private FragmentMyInfo fragmentMyInfo = new FragmentMyInfo();
 
+    RecyclerView recyclerView;
+    mainAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        recyclerview = findViewById(R.id.);
+        /****************************************************************************/
+        //recyclerView
+        recyclerView = findViewById(R.id.mainRecycler);
 
-//        DeviceAdapter adapter = new DeviceAdapter(assistiveDivices);
-//        recyclerview.setAdapter(adapter);
-//        recyclerview.setLayoutManager(new LinearLayoutManager(this));
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
+        recyclerView.setLayoutManager(linearLayoutManager);
+        adapter = new mainAdapter();
 
-        Intent intent = new Intent(this, myPageActivity.class);
-        startActivity(intent);
+        for(int i=1;i<=10;i++){
+            if(i%2==0)
+                adapter.addItem(new Device(R.drawable.orcam,i+"번째 사람",i));
+            else
+                adapter.addItem(new Device(R.drawable.tackplus,i+"번째 사람",i));
+
+        }
+        recyclerView.setAdapter(adapter);
+        /*******************************************************************************/
+
+
+//        Intent intent = new Intent(this, myPageActivity.class);
+//        startActivity(intent);
 
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.frameLayout, fragmentMyInfo).commitAllowingStateLoss();
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.navigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(new ItemSelectedListener());
+
+
+
+
+
+
     }
 
 
