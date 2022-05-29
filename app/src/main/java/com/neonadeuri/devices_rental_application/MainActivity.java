@@ -1,32 +1,65 @@
 package com.neonadeuri.devices_rental_application;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btnMyPage;
 
+    private FragmentManager fragmentManager = getSupportFragmentManager();
+    private FragmentMyInfo fragmentMyInfo = new FragmentMyInfo();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnMyPage = (Button) findViewById(R.id.mypagebutton);
 
-        btnMyPage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openMyPage();
+//        recyclerview = findViewById(R.id.);
+
+//        DeviceAdapter adapter = new DeviceAdapter(assistiveDivices);
+//        recyclerview.setAdapter(adapter);
+//        recyclerview.setLayoutManager(new LinearLayoutManager(this));
+
+        Intent intent = new Intent(this, myPageActivity.class);
+        startActivity(intent);
+
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.frameLayout, fragmentMyInfo).commitAllowingStateLoss();
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.navigationView);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new ItemSelectedListener());
+    }
+
+
+    class ItemSelectedListener implements BottomNavigationView.OnNavigationItemSelectedListener{
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+
+            switch(menuItem.getItemId())
+            {
+                case R.id.myInfo:
+                    transaction.replace(R.id.frameLayout, fragmentMyInfo).commitAllowingStateLoss();
+                    break;
+
             }
-        });
-
-
+            return true;
         }
+    }
+
     public void openMyPage() {
         Intent intent = new Intent(this, myPageActivity.class);
         startActivity(intent);
