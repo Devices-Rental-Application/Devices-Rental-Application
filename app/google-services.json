@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "841388591169",
+    "firebase_url": "https://android-90525-default-rtdb.firebaseio.com",
+    "project_id": "android-90525",
+    "storage_bucket": "android-90525.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841388591169:android:3670db512c5d25fdeb9ec0",
+        "android_client_info": {
+          "package_name": "com.example.databasetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841388591169-ehm68tbif49l1oqukl56hg0vuqr008jv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJAM9x9qwtDTnm4BMqc1I02-LqXgDsfNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841388591169-ehm68tbif49l1oqukl56hg0vuqr008jv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841388591169:android:58a226671fd0727feb9ec0",
+        "android_client_info": {
+          "package_name": "com.neonadeuri.devices_rental_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841388591169-ehm68tbif49l1oqukl56hg0vuqr008jv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJAM9x9qwtDTnm4BMqc1I02-LqXgDsfNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841388591169-ehm68tbif49l1oqukl56hg0vuqr008jv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
