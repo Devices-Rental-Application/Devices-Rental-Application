@@ -54,9 +54,6 @@ public class MainActivity extends AppCompatActivity {
 //        Intent intent = new Intent(this, myPageActivity.class);
 //        startActivity(intent);
 
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.frameLayout, fragmentMyInfo).commitAllowingStateLoss();
-
         BottomNavigationView bottomNavigationView = findViewById(R.id.navigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(new ItemSelectedListener());
 
