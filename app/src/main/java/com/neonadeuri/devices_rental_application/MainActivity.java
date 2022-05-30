@@ -14,6 +14,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -32,22 +36,60 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /****************************************************************************/
-        //recyclerView
         recyclerView = findViewById(R.id.mainRecycler);
-
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
         recyclerView.setLayoutManager(linearLayoutManager);
         adapter = new mainAdapter();
 
-        for(int i=1;i<=10;i++){
-            if(i%2==0)
-                adapter.addItem(new Device(R.drawable.orcam,i+"번째 사람",i));
-            else
-                adapter.addItem(new Device(R.drawable.tackplus,i+"번째 사람",i));
+        DataBaseController dataBaseController=new DataBaseController();
+        dataBaseController.getIdListDataBase().addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String temp = snapshot.getValue(String.class);
+                if(temp==null) return;
+                String[] idList=temp.split(",");
 
-        }
-        recyclerView.setAdapter(adapter);
+                for(String id:idList) {
+                    DatabaseReference device = dataBaseController.getDeviceDataBase(id);
+                    device.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            Device d = snapshot.getValue(Device.class);
+                            if (d == null) return;
+                            adapter.addItem(d);
+                            recyclerView.setAdapter(adapter);
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        /****************************************************************************/
+//        //recyclerView
+//        recyclerView = findViewById(R.id.mainRecycler);
+//
+//        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
+//        recyclerView.setLayoutManager(linearLayoutManager);
+//        adapter = new mainAdapter();
+//
+//        for(int i=1;i<=10;i++){
+//            if(i%2==0)
+//                adapter.addItem(new Device(R.drawable.orcam,i+"번째 사람",i));
+//            else
+//                adapter.addItem(new Device(R.drawable.tackplus,i+"번째 사람",i));
+//
+//        }
+//        recyclerView.setAdapter(adapter);
         /*******************************************************************************/
 
 

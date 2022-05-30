@@ -74,12 +74,12 @@ public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder> {
 //            itemView.setOnClickListener(new View.OnClickListener() {
 //                @Override
 //                public void onClick(View view) {
-////                    int pos = getAdapterPosition();
-////                    if(pos!= RecyclerView.NO_POSITION){
-////                        Intent intent = new Intent(mContext,InterestActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-////
-////                        mContext.startActivities(intent);
-////                    }
+//                    int pos = getAdapterPosition();
+//                    if(pos!= RecyclerView.NO_POSITION){
+//                        Intent intent = new Intent(mContext,device_detail.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                        intent.putExtra("id","1");
+//                        startActivities(intent);
+//                    }
 //
 //                }
 //            });
