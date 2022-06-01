@@ -1,6 +1,8 @@
 package com.neonadeuri.devices_rental_application;
 
-public class Device {
+import java.io.Serializable;
+
+public class Device implements Serializable {
     private String id;
     private String name;
     private int maxCnt;

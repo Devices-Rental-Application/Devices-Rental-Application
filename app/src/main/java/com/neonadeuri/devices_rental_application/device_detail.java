@@ -62,7 +62,7 @@ public class device_detail extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent =new Intent(getApplicationContext(),application_page.class);
-                intent.putExtra("deviceName",d.getName());
+                intent.putExtra("device",d);
                 startActivity(intent);
                 onBackPressed();
             }
