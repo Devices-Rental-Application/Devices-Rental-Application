@@ -44,6 +44,7 @@ public class myPageEditActivity extends AppCompatActivity {
         EditText editTextStdnum = (EditText) findViewById(R.id.stdnumEditText);
         EditText editTextMajor = (EditText) findViewById(R.id.majorEditText);
         EditText editTextPlace = (EditText) findViewById(R.id.placeEditText);
+        EditText phoneNumber = (EditText) findViewById(R.id.phoneNumber);
 
         editTextName.setText(intent.getStringExtra("externName"));
         editTextStdnum.setText(intent.getStringExtra("externStdnum"));
@@ -104,8 +105,9 @@ public class myPageEditActivity extends AppCompatActivity {
 
                 Intent returnIntent = getIntent();
 
-
-
+                User user=new User();
+                user.setName(editTextName.getText().toString());
+                user.setPhoneNumber(phoneNumber.getText().toString());
 
 
                 returnIntent.putExtra("userName", editTextName.getText().toString());
