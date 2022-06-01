@@ -78,7 +78,9 @@ public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder> {
                     int pos = getAdapterPosition();
                     if(pos!= RecyclerView.NO_POSITION){
                         Device item = items.get(pos);
-                        Toast.makeText(mContext.getApplicationContext(), ""+item.getName(), Toast.LENGTH_LONG).show();
+                        Intent intent =new Intent(mContext.getApplicationContext(),device_detail.class);
+                        intent.putExtra("id",item.getId());
+                        mContext.startActivity(intent);
                     }
                 }
             });

@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DevicesRentalApplication">
         <activity
+            android:name=".application_status"
+            android:exported="false" />
+        <activity
+            android:name=".application_page"
+            android:exported="false" />
+        <activity
             android:name=".device_detail"
             android:exported="false" />
         <activity
@@ -25,10 +31,10 @@
         </activity>
         <activity
             android:name=".myPageActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".myPageEditActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
