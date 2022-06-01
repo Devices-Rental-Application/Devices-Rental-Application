@@ -57,4 +57,8 @@ public class Device {
     }
 
     public String getDescription(){return description;}
+
+    public void setCurrentCnt(int currentCnt) {
+        this.currentCnt = currentCnt;
+    }
 }
