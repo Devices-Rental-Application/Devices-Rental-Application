@@ -61,7 +61,7 @@ public class device_detail extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent =new Intent(getApplicationContext(),application_page.class);
-                intent.putExtra("name",d.getName());
+                intent.putExtra("deviceName",d.getName());
                 startActivity(intent);
                 finish();
             }

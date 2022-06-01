@@ -22,13 +22,17 @@ public class application_page extends AppCompatActivity {
         setContentView(R.layout.activity_application_page);
 
         Intent intent=getIntent();
-        String dName=intent.getStringExtra("name");
+        String dName=intent.getStringExtra("deviceName");
+        User user=new User();
 
         deviceName=findViewById(R.id.deviceName);
         name=findViewById(R.id.name);
         phoneNumber=findViewById(R.id.phoneNumber);
 
+
         deviceName.setText(dName);
+        name.setText(user.getName());
+        phoneNumber.setText(user.getPhoneNumber());
 
         applicationBtn=(Button) findViewById(R.id.applicationBtn);
 
