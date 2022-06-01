@@ -3,15 +3,15 @@
     <item
         android:id="@+id/main"
         android:icon="@drawable/list_icon"
-        android:title="main" />
+        android:title="메인" />
     <item
-        android:id="@+id/cameraItem"
+        android:id="@+id/Dibs"
         android:icon="@android:drawable/ic_search_category_default"
-        android:title="Camera" />
+        android:title="찜목록" />
     <item
-        android:id="@+id/callItem"
-        android:icon="@android:drawable/ic_menu_call"
-        android:title="Call" />
+        android:id="@+id/search"
+        android:icon="@android:drawable/ic_search_category_default"
+        android:title="검색" />
     <item
         android:id="@+id/myInfo"
         android:icon="@drawable/list_icon"

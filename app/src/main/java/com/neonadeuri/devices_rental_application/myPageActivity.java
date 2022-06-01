@@ -32,7 +32,7 @@ public class myPageActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mypage);
+        setContentView(R.layout.fragment_mypage);
         Button btnEditMyInfo = (Button) findViewById(R.id.editMyInfoButton);
         setTitle("내 정보");
         getSupportActionBar().setTitle("내 정보");

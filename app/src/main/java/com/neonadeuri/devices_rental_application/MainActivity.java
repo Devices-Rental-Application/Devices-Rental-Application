@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
     private FragmentManager fragmentManager = getSupportFragmentManager();
     private FragmentMyInfo fragmentMyInfo = new FragmentMyInfo();
+    private FragmentMainPage fragmentMainPage = new FragmentMainPage();
+    private FragmentDibs fragmentDibs = new FragmentDibs();
+    private FragmentSearch fragmentSearch = new FragmentSearch();
 
     RecyclerView recyclerView;
     mainAdapter adapter;
@@ -115,10 +118,18 @@ public class MainActivity extends AppCompatActivity {
 
             switch(menuItem.getItemId())
             {
+                case R.id.main:
+                    transaction.replace(R.id.frameLayout, fragmentMainPage).commitAllowingStateLoss();
+                    break;
                 case R.id.myInfo:
                     transaction.replace(R.id.frameLayout, fragmentMyInfo).commitAllowingStateLoss();
                     break;
-
+                case R.id.search:
+                    transaction.replace(R.id.frameLayout, fragmentSearch).commitAllowingStateLoss();
+                    break;
+                case R.id.Dibs:
+                    transaction.replace(R.id.frameLayout, fragmentDibs).commitAllowingStateLoss();
+                    break;
             }
             return true;
         }
