@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
     private FragmentDibs fragmentDibs = new FragmentDibs();
     private FragmentSearch fragmentSearch = new FragmentSearch();
 
-    RecyclerView recyclerView;
-    mainAdapter adapter;
+    static RecyclerView recyclerView;
+    static mainAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,22 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 String[] idList=temp.split(",");
 
                 for(String id:idList) {
-                    DatabaseReference device = dataBaseController.getDeviceDataBase(id);
-                    device.addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            Device d = snapshot.getValue(Device.class);
-                            if (d == null) return;
-                            //TODO:값이 바뀌면 새거가 생성 되는걸 수정
-                            adapter.addItem(d);
-                            recyclerView.setAdapter(adapter);
-                        }
-
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError error) {
-
-                        }
-                    });
+                    setDeviceListener(id);
                 }
             }
 
@@ -108,6 +93,31 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+    public static void setDeviceListener(String id){
+        DataBaseController dataBaseController=new DataBaseController();
+        DatabaseReference device = dataBaseController.getDeviceDataBase(id);
+        device.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Device d = snapshot.getValue(Device.class);
+                if (d == null) return;
+                int idx=adapter.getItemPosById(id);
+                if(idx==-1) {
+                    adapter.addItem(d);
+                }
+                else {
+                    adapter.setItem(idx,d);
+                }
+                recyclerView.setAdapter(adapter);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 
 

@@ -21,6 +21,8 @@ public class device_detail extends AppCompatActivity {
     TextView name,nowCnt,description;
     ImageView img;
     Device d;
+    String id;
+    DatabaseReference device;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +30,7 @@ public class device_detail extends AppCompatActivity {
         setContentView(R.layout.activity_device_detail);
 
         Intent intent=getIntent();
-        String id=intent.getStringExtra("id");
+        id=intent.getStringExtra("id");
 
         name=(TextView) findViewById(R.id.name);
         nowCnt=(TextView) findViewById(R.id.nowCount);
@@ -38,8 +40,7 @@ public class device_detail extends AppCompatActivity {
 
         DataBaseController dataBaseController=new DataBaseController();
 
-        DatabaseReference device = dataBaseController.getDeviceDataBase(id);
-        //TODO:리스너 새로 등록하면 이전 리스너 사라지기에 이페이지에서 나갈때 리사이클러뷰쪽 리스너 새로 등록
+        device = dataBaseController.getDeviceDataBase(id);
         device.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -61,10 +62,16 @@ public class device_detail extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent =new Intent(getApplicationContext(),application_page.class);
-                intent.putExtra("name",d.getName());
+                intent.putExtra("device",d);
                 startActivity(intent);
-                finish();
+                onBackPressed();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        MainActivity.setDeviceListener(id);
+        finish();
     }
 }

@@ -55,6 +55,15 @@ public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder> {
         return items.get(position);
     }
 
+    public int getItemPosById(String id){
+        for(int i=0;i<getItemCount();i++){
+            if(getItem(i).getId().equals(id)){
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public void setItem(int position, Device item){
         items.set(position,item);
     }
