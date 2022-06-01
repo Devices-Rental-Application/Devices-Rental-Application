@@ -33,9 +33,6 @@
         </activity>
 
         <activity
-            android:name=".device_detail"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="false">
 
