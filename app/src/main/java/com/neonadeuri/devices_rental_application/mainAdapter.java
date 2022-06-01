@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -71,18 +72,16 @@ public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder> {
             name = itemView.findViewById(R.id.deviceName);
             cnt = itemView.findViewById(R.id.deviceCnt);
 
-//            itemView.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    int pos = getAdapterPosition();
-//                    if(pos!= RecyclerView.NO_POSITION){
-//                        Intent intent = new Intent(mContext,device_detail.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                        intent.putExtra("id","1");
-//                        startActivities(intent);
-//                    }
-//
-//                }
-//            });
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int pos = getAdapterPosition();
+                    if(pos!= RecyclerView.NO_POSITION){
+                        Device item = items.get(pos);
+                        Toast.makeText(mContext.getApplicationContext(), ""+item.getName(), Toast.LENGTH_LONG).show();
+                    }
+                }
+            });
         }
 
         void setItem(Device item){
