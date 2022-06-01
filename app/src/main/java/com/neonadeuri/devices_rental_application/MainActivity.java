@@ -59,8 +59,13 @@ public class MainActivity extends AppCompatActivity {
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             Device d = snapshot.getValue(Device.class);
                             if (d == null) return;
-                            //TODO:값이 바뀌면 새거가 생성 되는걸 수정
-                            adapter.addItem(d);
+                            int idx=adapter.getItemPosById(id);
+                            if(idx==-1) {
+                                adapter.addItem(d);
+                            }
+                            else {
+                                adapter.setItem(idx,d);
+                            }
                             recyclerView.setAdapter(adapter);
                         }
 
