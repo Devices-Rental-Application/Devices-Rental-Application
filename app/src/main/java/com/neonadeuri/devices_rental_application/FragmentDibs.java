@@ -2,6 +2,7 @@ package com.neonadeuri.devices_rental_application;
 
         import android.os.Bundle;
         import android.view.LayoutInflater;
+        import android.view.MotionEvent;
         import android.view.View;
         import android.view.ViewGroup;
 
@@ -11,6 +12,14 @@ package com.neonadeuri.devices_rental_application;
 
 public class FragmentDibs extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_dibs_page, container, false);
+        View view = inflater.inflate(R.layout.fragment_dibs_page, container, false);
+
+        view.setOnTouchListener(new View.OnTouchListener() {
+            public boolean onTouch(View v, MotionEvent event) {
+                return true;
+            }
+        });
+
+        return view;
     }
 }
