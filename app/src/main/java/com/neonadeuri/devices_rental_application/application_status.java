@@ -15,6 +15,7 @@ public class application_status extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_application_status);
+        setTitle("신청현황");
 
         Intent intent=getIntent();
         int pos=intent.getIntExtra("pos",0);
