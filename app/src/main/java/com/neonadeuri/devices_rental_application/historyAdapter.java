@@ -3,6 +3,7 @@ package com.neonadeuri.devices_rental_application;
 
 
 import android.content.Context;
+import android.graphics.drawable.GradientDrawable;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -74,6 +75,9 @@ public class historyAdapter extends RecyclerView.Adapter<historyAdapter.ViewHold
             date = itemView.findViewById(R.id.historyDate);
             state = itemView.findViewById(R.id.deviceState);
 
+            GradientDrawable drawable=    (GradientDrawable) mContext.getDrawable(R.drawable.image_background);
+            img.setBackground(drawable);
+            img.setClipToOutline(true);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
