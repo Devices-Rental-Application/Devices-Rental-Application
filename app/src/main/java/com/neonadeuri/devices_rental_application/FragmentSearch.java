@@ -34,13 +34,17 @@ public class FragmentSearch extends Fragment {
         recyclerView2.setLayoutManager(linearLayoutManager);
         adapter2 = new historyAdapter();
 
-        for(int i=1;i<=10;i++){
-            if(i%2==0)
-                adapter2.addItem(new DeviceHistory(R.drawable.orcam,i+"상태",i+"이름","날짜","받는사람"));
-            else
-                adapter2.addItem(new DeviceHistory(R.drawable.tackplus,i+"상태",i+"이름","날짜","받는사람"));
-
+        for(int i=0;i<User.historySize();i++){
+            adapter2.addItem(User.getHistoryByPos(i));
         }
+
+//        for(int i=1;i<=10;i++){
+//            if(i%2==0)
+//                adapter2.addItem(new DeviceHistory(R.drawable.orcam,i+"상태",i+"이름","날짜","받는사람"));
+//            else
+//                adapter2.addItem(new DeviceHistory(R.drawable.tackplus,i+"상태",i+"이름","날짜","받는사람"));
+//
+//        }
         recyclerView2.setAdapter(adapter2);
 
         return view;
