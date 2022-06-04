@@ -28,6 +28,7 @@ public class device_detail extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_device_detail);
+        getSupportActionBar().hide();
 
         Intent intent=getIntent();
         id=intent.getStringExtra("id");

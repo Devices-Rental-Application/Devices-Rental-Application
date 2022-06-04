@@ -36,6 +36,7 @@ public class myPageActivity extends AppCompatActivity implements View.OnClickLis
         Button btnEditMyInfo = (Button) findViewById(R.id.editMyInfoButton);
         setTitle("내 정보");
         getSupportActionBar().setTitle("내 정보");
+        getSupportActionBar().hide();
 
 
         btnEditMyInfo.setOnClickListener(this);

@@ -8,6 +8,7 @@
     tools:context=".myPageActivity">
 
 
+
     <ImageView
         android:id="@+id/myPhoto"
         android:layout_width="116dp"
@@ -115,6 +116,8 @@
         android:layout_height="77dp"
         android:text="내 정보 수정"
         android:textSize="20dp"
+        android:background="@drawable/reverse_button_layout"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -127,6 +130,8 @@
         android:layout_height="77dp"
         android:text="대여 내역"
         android:textSize="20dp"
+        android:background="@drawable/reverse_button_layout"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -139,6 +144,8 @@
         android:layout_height="77dp"
         android:text="관심 목록"
         android:textSize="20dp"
+        android:background="@drawable/reverse_button_layout"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.523"
