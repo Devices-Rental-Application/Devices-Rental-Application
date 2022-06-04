@@ -1,39 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/item_background">
 
     <ImageView
         android:id="@+id/deviceImg"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_margin="5dp"
-        android:src="@drawable/tackplus"/>
+        android:layout_gravity="center"
+
+        android:src="@drawable/tackplus" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/deviceName"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
             android:autoSizeTextType="uniform"
+            android:fontFamily="@font/dohyun"
 
             android:autoSizeMinTextSize="12sp"
-            android:autoSizeMaxTextSize="40sp"
+            android:autoSizeMaxTextSize="25sp"
             android:autoSizeStepGranularity="2sp"
-            android:text="device name"/>
+            android:text="name"/>
 
         <TextView
             android:id="@+id/deviceCnt"
             android:layout_marginLeft="10dp"
-            android:textSize="30sp"
+            android:textSize="15sp"
+            android:fontFamily="@font/dohyun"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Current cnt"/>
