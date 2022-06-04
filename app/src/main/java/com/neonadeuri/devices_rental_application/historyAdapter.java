@@ -4,6 +4,7 @@ package com.neonadeuri.devices_rental_application;
 
 import android.content.Context;
 import android.graphics.drawable.GradientDrawable;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -83,10 +84,9 @@ public class historyAdapter extends RecyclerView.Adapter<historyAdapter.ViewHold
                     int pos = getAdapterPosition();
                     if(pos!= RecyclerView.NO_POSITION){
                         //클릭 이벤트 처리 부분
-//                        DeviceHistory item = items.get(pos);
-//                        Intent intent =new Intent(mContext.getApplicationContext(),device_detail.class);
-//                        intent.putExtra("id",item.getId());
-//                        mContext.startActivity(intent);
+                        Intent intent =new Intent(mContext.getApplicationContext(),application_status.class);
+                        intent.putExtra("pos",pos);
+                        mContext.startActivity(intent);
                     }
                 }
             });
