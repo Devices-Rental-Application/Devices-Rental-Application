@@ -15,6 +15,7 @@ public class searchPageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_serach_page);
+        getSupportActionBar().hide();
 
         recyclerView2 = findViewById(R.id.historyRV);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);

@@ -8,6 +8,7 @@
     tools:context=".myPageActivity">
 
 
+
     <ImageView
         android:id="@+id/myPhoto"
         android:layout_width="116dp"

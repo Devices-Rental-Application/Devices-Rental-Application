@@ -37,6 +37,7 @@ public class myPageEditActivity extends AppCompatActivity {
         Button btnEditPhoto = findViewById(R.id.editMyPhotoButton);
         setTitle("정보 수정");
         getSupportActionBar().setTitle("정보 수정");
+        getSupportActionBar().hide();
 
         Intent intent = getIntent();
 

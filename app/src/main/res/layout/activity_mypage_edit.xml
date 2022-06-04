@@ -6,6 +6,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".myPageEditActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/dohyun"
+        android:text="내 정보 수정"
+        android:textSize="25dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_height="3dp"
+        android:background="#C6C6C6" />
+
     <ScrollView
 
         android:id="@+id/ScrollView1"
@@ -31,10 +48,13 @@
 
             <Button
                 android:id="@+id/editMyPhotoButton"
-                android:layout_width="369dp"
+                android:layout_width="300dp"
+                android:layout_margin="10dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:text="내 사진 수정"
+                android:background="@drawable/button_layout"
+                android:textColor="#BC1D55"
                 android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -179,6 +199,9 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="center"
+        android:background="@drawable/reverse_button_layout"
+        android:textColor="#FFFFFF"
+        android:layout_margin="5dp"
         android:text="정보 저장"
         android:textSize="20dp"/>
 

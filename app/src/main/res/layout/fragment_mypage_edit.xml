@@ -6,6 +6,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".myPageEditActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/dohyun"
+        android:text="내 정보 수정"
+        android:textSize="25dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_height="3dp"
+        android:background="#C6C6C6" />
+
     <ScrollView
 
         android:id="@+id/ScrollView1"
