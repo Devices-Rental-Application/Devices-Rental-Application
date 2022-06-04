@@ -121,7 +121,7 @@
                         android:layout_height="wrap_content">
                         <EditText
                             android:id="@+id/year"
-                            android:textSize="40dp"
+                            android:textSize="20dp"
                             android:textAlignment="center"
                             android:layout_gravity="center"
                             android:layout_width="100dp"
@@ -134,7 +134,7 @@
                             android:textSize="30dp"/>
                         <EditText
                             android:id="@+id/month"
-                            android:textSize="40dp"
+                            android:textSize="20dp"
                             android:textAlignment="center"
                             android:layout_gravity="center"
                             android:layout_width="50dp"
@@ -147,7 +147,7 @@
                             android:textSize="30dp"/>
                         <EditText
                             android:id="@+id/day"
-                            android:textSize="40dp"
+                            android:textSize="20dp"
                             android:textAlignment="center"
                             android:layout_gravity="center"
                             android:layout_width="50dp"
@@ -183,7 +183,7 @@
 
                         <EditText
                             android:id="@+id/hour"
-                            android:textSize="40dp"
+                            android:textSize="20dp"
                             android:textAlignment="center"
                             android:layout_gravity="center"
                             android:layout_width="100dp"
@@ -196,7 +196,7 @@
                             android:textSize="30dp"/>
                         <EditText
                             android:id="@+id/minute"
-                            android:textSize="40dp"
+                            android:textSize="20dp"
                             android:textAlignment="center"
                             android:layout_gravity="center"
                             android:layout_width="100dp"
