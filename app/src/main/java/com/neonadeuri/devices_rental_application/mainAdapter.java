@@ -3,6 +3,7 @@ package com.neonadeuri.devices_rental_application;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.GradientDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -80,6 +81,10 @@ public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder> {
             img = itemView.findViewById(R.id.deviceImg);
             name = itemView.findViewById(R.id.deviceName);
             cnt = itemView.findViewById(R.id.deviceCnt);
+
+            GradientDrawable drawable=    (GradientDrawable) mContext.getDrawable(R.drawable.image_background);
+            img.setBackground(drawable);
+            img.setClipToOutline(true);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

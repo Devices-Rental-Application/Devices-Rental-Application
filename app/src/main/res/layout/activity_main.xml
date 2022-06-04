@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="#F9F9F9"
     android:orientation="vertical">
 
     <FrameLayout
@@ -18,24 +19,50 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#F5F5F5"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:text="대여물품 카테고리 만들어야함 (ex 시각,청각)"
-                android:textColor="#000"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:layout_gravity="center"
+                android:fontFamily="@font/dohyun"
+                android:text="메인 페이지"
+                android:textSize="25dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="3dp"
+                android:background="#C6C6C6" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/linear_background">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/mainRecycler"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
+        </LinearLayout>
 
         </LinearLayout>
 

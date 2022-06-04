@@ -7,6 +7,11 @@
         <entry key="..\:/AndroidProject/Git/Devices-Rental-Application/app/src/main/res/layout/activity_main.xml" value="0.25794871794871793" />
         <entry key="..\:/AndroidProject/Git/Devices-Rental-Application/app/src/main/res/layout/activity_mypage.xml" value="0.26197916666666665" />
         <entry key="..\:/AndroidProject/Git/Devices-Rental-Application/app/src/main/res/layout/activity_mypage_edit.xml" value="0.11822916666666666" />
+        <entry key="..\:/CBNU/2022-1/lecture/Android/Project/app/src/main/res/drawable/image_background.xml" value="0.2625" />
+        <entry key="..\:/CBNU/2022-1/lecture/Android/Project/app/src/main/res/drawable/item_background.xml" value="0.2625" />
+        <entry key="..\:/CBNU/2022-1/lecture/Android/Project/app/src/main/res/drawable/linear_background.xml" value="0.316" />
+        <entry key="..\:/CBNU/2022-1/lecture/Android/Project/app/src/main/res/drawable/radius.xml" value="0.2625" />
+        <entry key="..\:/CBNU/2022-1/lecture/Android/Project/app/src/main/res/font/font.xml" value="0.4166666666666667" />
         <entry key="..\:/CBNU/2022-1/lecture/Android/Project/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/CBNU/2022-1/lecture/Android/Project/app/src/main/res/layout/activity_mypage.xml" value="0.1879432624113475" />
         <entry key="..\:/CBNU/2022-1/lecture/Android/Project/app/src/main/res/layout/activity_mypage_edit.xml" value="0.38645833333333335" />
@@ -16,7 +21,8 @@
         <entry key="..\:/CBNU/2022-1/lecture/Android/Project/app/src/main/res/layout/fragment_mypage.xml" value="0.24728260869565216" />
         <entry key="..\:/CBNU/2022-1/lecture/Android/Project/app/src/main/res/layout/fragment_mypage_edit.xml" value="0.38645833333333335" />
         <entry key="..\:/CBNU/2022-1/lecture/Android/Project/app/src/main/res/layout/fragment_serach_page.xml" value="0.24728260869565216" />
-        <entry key="..\:/CBNU/2022-1/lecture/Android/Project/app/src/main/res/layout/main_item.xml" value="0.38645833333333335" />
+        <entry key="..\:/CBNU/2022-1/lecture/Android/Project/app/src/main/res/layout/history_item.xml" value="0.33" />
+        <entry key="..\:/CBNU/2022-1/lecture/Android/Project/app/src/main/res/layout/main_item.xml" value="0.33" />
         <entry key="..\:/CBNU/2022-1/lecture/Android/Project/app/src/main/res/layout/spinner_layout.xml" value="0.1879432624113475" />
         <entry key="..\:/CBNU/2022-1/lecture/Android/Project/app/src/main/res/menu/menu_bottomnavigationview.xml" value="0.38645833333333335" />
         <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/drawable-v24/application_border.xml" value="0.1" />
