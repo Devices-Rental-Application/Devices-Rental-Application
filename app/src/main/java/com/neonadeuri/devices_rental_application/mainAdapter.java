@@ -39,6 +39,9 @@ public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Device item = items.get(position);
+        if(User.isContain(item.getId())){
+            holder.interestBtn.setSelected(true);
+        }
         holder.setItem(item);
     }
 
@@ -99,18 +102,23 @@ public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder> {
             interestBtn.setOnClickListener(new View.OnClickListener() {
 
                 public void onClick(View button) {
+                    int pos = getAdapterPosition();
+                    Device item=items.get(pos);
                     //Set the button's appearance
                     button.setSelected(!button.isSelected());
 
                     if (button.isSelected()) {
-                        //Handle selected state change
+                        User.addDib(item);
                     } else {
-                        //Handle de-select state change
+                        User.removeDib(item);
                     }
 
                 }
 
             });
+
+
+
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

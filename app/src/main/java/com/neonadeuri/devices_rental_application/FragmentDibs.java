@@ -12,6 +12,8 @@ package com.neonadeuri.devices_rental_application;
         import androidx.recyclerview.widget.LinearLayoutManager;
         import androidx.recyclerview.widget.RecyclerView;
 
+        import java.util.HashMap;
+
 
 public class FragmentDibs extends Fragment {
 
@@ -34,11 +36,10 @@ public class FragmentDibs extends Fragment {
         recyclerView3.setLayoutManager(linearLayoutManager);
         adapter3 = new mainAdapter();
 
-        for(int i=1;i<=10;i++){
-            if(i%2==0)
-                adapter3.addItem(new Device(R.drawable.orcam,i+"번째 사람",i));
-            else
-                adapter3.addItem(new Device(R.drawable.tackplus,i+"번째 사람",i));
+        HashMap<String,Device> dibs=User.getDibs();
+
+        for(Device dib:dibs.values()){
+            adapter3.addItem(dib);
 
         }
         recyclerView3.setAdapter(adapter3);
