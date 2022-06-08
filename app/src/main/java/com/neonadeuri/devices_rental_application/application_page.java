@@ -66,7 +66,7 @@ public class application_page extends AppCompatActivity {
                         day.getText().toString()+"일 "+
                         hour.getText().toString()+"시"+
                         minute.getText().toString()+"분";
-                pos=user.addDeviceHistory(d.getResourceId(),"허가 대기중",d.getName(),date,name.getText().toString());
+                pos=user.addDeviceHistory(d.getResourceId(),"대기중",d.getName(),date,name.getText().toString());
                 Intent intent =new Intent(getApplicationContext(),application_status.class);
                 intent.putExtra("pos",pos);
                 startActivity(intent);

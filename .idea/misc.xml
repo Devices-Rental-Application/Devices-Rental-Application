@@ -37,11 +37,12 @@
         <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/drawable/device_detail_layout.xml" value="0.3325" />
         <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/drawable/device_detail_sublayout.xml" value="0.3325" />
         <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/drawable/device_info.xml" value="0.3325" />
+        <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/drawable/linear_background.xml" value="0.166" />
         <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/drawable/reverse_button_layout.xml" value="0.166" />
         <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/layout-v31/activity_device_detail.xml" value="0.1875" />
         <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/layout/activity_application_page.xml" value="0.33" />
         <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/layout/activity_application_status.xml" value="0.33" />
-        <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/layout/activity_device_detail.xml" value="0.25" />
+        <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/layout/activity_device_detail.xml" value="0.33" />
         <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/layout/activity_mypage.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/layout/activity_mypage_edit.xml" value="0.36614583333333334" />
@@ -53,6 +54,7 @@
         <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/layout/fragment_mypage_edit.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/layout/fragment_serach_page.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/layout/history_item.xml" value="0.21240942028985507" />
+        <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/layout/main_item.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/layout/round_textview.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/layout/spinner_layout.xml" value="0.21240942028985507" />
         <entry key="..\:/Users/lhs45/AndroidStudioProjects/DevicesRentalApplication/app/src/main/res/menu/menu_bottomnavigationview.xml" value="0.1" />
