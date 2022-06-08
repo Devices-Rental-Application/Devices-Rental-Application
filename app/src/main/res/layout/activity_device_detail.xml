@@ -13,6 +13,7 @@
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:fontFamily="@font/dohyun"
+        android:textColor="@color/black"
         android:text="상세 정보"
         android:textSize="25dp" />
     <View

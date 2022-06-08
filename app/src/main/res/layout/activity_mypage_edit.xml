@@ -14,6 +14,7 @@
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:fontFamily="@font/dohyun"
+        android:textColor="@color/black"
         android:text="내 정보 수정"
         android:textSize="25dp" />
     <View

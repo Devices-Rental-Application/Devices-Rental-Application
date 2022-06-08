@@ -37,6 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/dohyun"
+                android:textColor="@color/black"
                 android:text="메인 페이지"
                 android:textSize="25dp" />
 
