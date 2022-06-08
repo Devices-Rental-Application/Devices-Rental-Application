@@ -16,6 +16,7 @@ public class searchPageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_serach_page);
         getSupportActionBar().hide();
+        setTitle(" ");
 
         recyclerView2 = findViewById(R.id.historyRV);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);

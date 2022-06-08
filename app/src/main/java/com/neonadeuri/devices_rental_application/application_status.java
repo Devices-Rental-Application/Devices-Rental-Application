@@ -16,6 +16,7 @@ public class application_status extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_application_status);
         getSupportActionBar().hide();
+        setTitle(" ");
 
         Intent intent=getIntent();
         int pos=intent.getIntExtra("pos",0);

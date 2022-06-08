@@ -34,8 +34,7 @@ public class myPageActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_mypage);
         Button btnEditMyInfo = (Button) findViewById(R.id.editMyInfoButton);
-        setTitle("내 정보");
-        getSupportActionBar().setTitle("내 정보");
+        setTitle(" ");
         getSupportActionBar().hide();
 
 

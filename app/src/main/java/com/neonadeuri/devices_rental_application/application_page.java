@@ -27,7 +27,7 @@ public class application_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_application_page);
-        setTitle("신청페이지");
+        setTitle(" ");
         getSupportActionBar().hide();
 
         Intent intent=getIntent();
