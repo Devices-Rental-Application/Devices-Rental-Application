@@ -3,7 +3,7 @@ package com.neonadeuri.devices_rental_application;
 import java.util.ArrayList;
 
 public class User {
-    private static String name="이름";
+    private static String name="홍길동";
     private static String phoneNumber="01012345678";
     private static ArrayList<DeviceHistory> histories=new ArrayList<DeviceHistory>();
 
