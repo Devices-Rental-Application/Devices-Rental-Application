@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -76,7 +77,9 @@ public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder> {
         ImageView img;
         TextView name;
         TextView cnt;
-        Button interestBtn;
+        ImageButton interestBtn;
+
+
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -84,18 +87,30 @@ public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder> {
             img = itemView.findViewById(R.id.deviceImg);
             name = itemView.findViewById(R.id.deviceName);
             cnt = itemView.findViewById(R.id.deviceCnt);
-            interestBtn = itemView.findViewById(R.id.interestBtn);
-
-            interestBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                   //여기서 버튼 구현
-                }
-            });
+            interestBtn = itemView.findViewById(R.id.heart);
 
             GradientDrawable drawable=    (GradientDrawable) mContext.getDrawable(R.drawable.image_background);
             img.setBackground(drawable);
             img.setClipToOutline(true);
+
+
+
+            //set the click listener
+            interestBtn.setOnClickListener(new View.OnClickListener() {
+
+                public void onClick(View button) {
+                    //Set the button's appearance
+                    button.setSelected(!button.isSelected());
+
+                    if (button.isSelected()) {
+                        //Handle selected state change
+                    } else {
+                        //Handle de-select state change
+                    }
+
+                }
+
+            });
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
