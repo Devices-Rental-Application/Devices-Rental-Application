@@ -7,6 +7,7 @@ import android.graphics.drawable.GradientDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +21,7 @@ public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder> {
 
     private ArrayList<Device> items = new ArrayList<>();
     private Context mContext;
+
 
     // 뷰홀더가 새로 만들어질 때 호출
     @NonNull
@@ -74,6 +76,7 @@ public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder> {
         ImageView img;
         TextView name;
         TextView cnt;
+        Button interestBtn;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -81,6 +84,14 @@ public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder> {
             img = itemView.findViewById(R.id.deviceImg);
             name = itemView.findViewById(R.id.deviceName);
             cnt = itemView.findViewById(R.id.deviceCnt);
+            interestBtn = itemView.findViewById(R.id.interestBtn);
+
+            interestBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                   //여기서 버튼 구현
+                }
+            });
 
             GradientDrawable drawable=    (GradientDrawable) mContext.getDrawable(R.drawable.image_background);
             img.setBackground(drawable);
