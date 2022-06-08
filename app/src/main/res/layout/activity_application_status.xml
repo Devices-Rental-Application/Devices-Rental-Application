@@ -13,6 +13,7 @@
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:text="신청 현황"
+        android:textColor="#7A7979"
         android:textSize="25dp" />
     <View
         android:layout_width="match_parent"
