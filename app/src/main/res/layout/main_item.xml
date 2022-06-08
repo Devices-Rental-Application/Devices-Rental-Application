@@ -28,13 +28,13 @@
             android:id="@+id/deviceName"
             android:layout_marginLeft="10dp"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:textColor="@color/black"
             android:autoSizeTextType="uniform"
             android:fontFamily="@font/dohyun"
 
             android:autoSizeMinTextSize="12sp"
-            android:autoSizeMaxTextSize="25sp"
+            android:autoSizeMaxTextSize="21sp"
             android:autoSizeStepGranularity="2sp"
             android:text="name"/>
 

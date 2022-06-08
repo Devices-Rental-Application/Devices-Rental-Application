@@ -31,8 +31,10 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_gravity="center"
+
                 android:text="신청 정보"
                 android:textColor="#7A7979"
+
                 android:textSize="25dp" />
             <View
                 android:layout_width="match_parent"

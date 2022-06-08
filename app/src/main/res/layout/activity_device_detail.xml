@@ -12,6 +12,7 @@
         android:gravity="center"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
+
         android:text="상세 정보"
         android:textColor="#7A7979"
         android:textSize="25dp" />

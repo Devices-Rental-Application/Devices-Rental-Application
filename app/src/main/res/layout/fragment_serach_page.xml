@@ -17,7 +17,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+
             android:textColor="#090808"
+
             android:text="대여 내역"
             android:textSize="25dp" />
 
