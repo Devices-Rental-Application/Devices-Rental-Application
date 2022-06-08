@@ -137,7 +137,7 @@ public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder> {
         void setItem(Device item){
             img.setImageResource(item.getResourceId());
             name.setText(item.getName());
-            cnt.setText(""+item.getCurrentCnt());
+            cnt.setText("남은수량: "+item.getCurrentCnt());
         }
     }
 }
