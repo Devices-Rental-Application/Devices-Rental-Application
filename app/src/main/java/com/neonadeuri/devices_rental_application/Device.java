@@ -1,3 +1,6 @@
+/*
+* 작성자:이혁수, 정종현
+* */
 package com.neonadeuri.devices_rental_application;
 
 import java.io.Serializable;

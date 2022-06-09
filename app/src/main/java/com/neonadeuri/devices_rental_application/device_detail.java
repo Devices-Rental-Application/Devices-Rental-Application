@@ -1,3 +1,6 @@
+/*
+ * 작성자:이혁수
+ * */
 package com.neonadeuri.devices_rental_application;
 
 import androidx.annotation.NonNull;
