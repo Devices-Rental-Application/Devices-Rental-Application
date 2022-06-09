@@ -128,7 +128,8 @@
                             android:layout_width="100dp"
                             android:background="@drawable/application_input_border"
                             android:layout_height="48dp"
-                            android:digits="0987654321"/>
+                            android:digits="0987654321"
+                            android:contentDescription="대여할 날이 몇 년도 인지 입력하세요"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
@@ -142,7 +143,8 @@
                             android:layout_width="50dp"
                             android:background="@drawable/application_input_border"
                             android:layout_height="48dp"
-                            android:digits="0987654321"/>
+                            android:digits="0987654321"
+                            android:contentDescription="대여할 날이 몇 월인지 입력하세요"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
@@ -156,7 +158,8 @@
                             android:layout_width="50dp"
                             android:background="@drawable/application_input_border"
                             android:layout_height="48dp"
-                            android:digits="0987654321"/>
+                            android:digits="0987654321"
+                            android:contentDescription="대여할 날이 몇일 인지 입력하세요"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
@@ -193,7 +196,8 @@
                             android:layout_width="100dp"
                             android:background="@drawable/application_input_border"
                             android:layout_height="48dp"
-                            android:digits="0987654321"/>
+                            android:digits="0987654321"
+                            android:contentDescription="대여할 시간이 몇 시인지 입력하세요"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
@@ -207,7 +211,8 @@
                             android:layout_width="100dp"
                             android:background="@drawable/application_input_border"
                             android:layout_height="48dp"
-                            android:digits="0987654321"/>
+                            android:digits="0987654321"
+                            android:contentDescription="대여할 시간이 몇 분인지 입력하세요"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"

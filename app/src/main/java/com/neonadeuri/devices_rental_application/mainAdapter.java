@@ -42,6 +42,7 @@ public class mainAdapter extends RecyclerView.Adapter<mainAdapter.ViewHolder> {
         if(User.isContain(item.getId())){
             holder.interestBtn.setSelected(true);
         }
+        holder.interestBtn.setContentDescription(item.getName()+" 찜버튼");
         holder.setItem(item);
     }
 
